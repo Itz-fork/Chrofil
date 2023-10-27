@@ -14,6 +14,7 @@ const filter_types = {
 async function createCSS(ftype, fval) {
     const ncss = new StyleSheet()
     ncss.replace(`img { filter: ${filter_types[ftype]}(${fval}) !important; }`)
+    console.log(ncss)
     document.adoptedStyleSheets = [...document.adoptedStyleSheets, ncss]
     editButton.setAttribute("aria-busy", "false")
 }
