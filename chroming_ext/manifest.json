@@ -1,0 +1,11 @@
+{
+    "name": "Chromig",
+    "version": "0.1",
+    "description": "A simple image editor for chrome",
+    "manifest_version": 3,
+    "author": "Itz-fork",
+    "action": {
+        "default_popup": "chromig_popup.html",
+        "default_title": "Chromig - Simple Chrome Image Editor"
+    }
+}

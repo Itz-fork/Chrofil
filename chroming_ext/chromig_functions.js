@@ -7,7 +7,7 @@ const filter_types = {
 // Create new stylesheet
 async function createCSS(ftype, fval) {
     const ncss = new StyleSheet()
-    ncss.replace(`img { filter: ${ftype}(${fval}); }`)
+    ncss.replace(`img { filter: ${filter_types[ftype]}(${fval}); }`)
 }
 
 // Main function
