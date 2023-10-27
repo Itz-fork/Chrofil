@@ -13,10 +13,11 @@ async function createCSS(ftype, fval) {
 
 // Main function
 async function EditImg() {
+    console.log("HELLO!")
     // Get selected filter
     let felemnt = document.getElementById("filter_type")
     let ftype = felemnt.options[felemnt.selectedIndex]
     // Get selected filter value
     let fval = document.getElementById("valrange").value
-    await createCSS()
+    await createCSS(ftype, fval)
 }
