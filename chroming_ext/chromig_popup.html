@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Chromig</title>
+</head>
+
+<body>
+    <form style="margin: 1vw;">
+        <!-- Filter type -->
+        <label for="filter_type">
+            <b>Select filter type</b>
+            <select id="ftypeval">
+                <option>Saturation</option>
+                <option>Grayscale</option>
+            </select>
+        </label>
+
+        <!-- Value -->
+        <label for="valrange">
+            <b>Enter filter precentage</b>
+            <input type="text" id="ival" name="ival" value="100%" required>
+        </label>
+
+        <!-- Function button -->
+        <button class="outline" onclick="">Edit!</button>
+    </form>
+
+    <script src="chromig_functions.js"></script>
+</body>
+
+</html>
