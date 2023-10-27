@@ -1,8 +1,4 @@
-// Edit button handler
-const editButton = document.getElementById("editButton")
-editButton.onclick = async () => {
-    await EditImg();
-};
+const editButton = document.getElementById("edit_button")
 
 // Current filter types
 const filter_types = {
@@ -12,7 +8,7 @@ const filter_types = {
 
 // Create new stylesheet
 async function createCSS(ftype, fval) {
-    const ncss = new StyleSheet()
+    const ncss = new CSSStyleSheet()
     ncss.replace(`img { filter: ${filter_types[ftype]}(${fval}) !important; }`)
     console.log(ncss)
     document.adoptedStyleSheets = [...document.adoptedStyleSheets, ncss]
@@ -29,3 +25,6 @@ async function EditImg() {
     let fval = document.getElementById("valrange").value
     await createCSS()
 }
+
+// Edit button handler
+editButton.addEventListener("click", () => EditImg())
