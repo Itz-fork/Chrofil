@@ -1,12 +1,13 @@
 /* Set pop-up window width */
 body {
-    width: 50vw;
+    min-width: 50vw !important;
+    height: fit-content;
 }
 
 /* Limit width to 25% of view port on large screens */
 @media (min-width: 990px) {
     body {
-        width: 25vw;
+        min-width: 25vw !important;
     }
 }
 
