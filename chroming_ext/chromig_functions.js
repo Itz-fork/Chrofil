@@ -27,4 +27,4 @@ async function EditImg() {
 }
 
 // Edit button handler
-editButton.addEventListener("click", () => EditImg())
+document.getElementById("edit_button").addEventListener("click", () => EditImg())
