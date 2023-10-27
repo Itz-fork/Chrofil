@@ -7,5 +7,12 @@
     "action": {
         "default_popup": "chromig_popup.html",
         "default_title": "Chromig - Simple Chrome Image Editor"
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "css": ["./chromig_css.css"],
+            "js": ["./chromig_functions.js"]
+        }
+    ]
 }
