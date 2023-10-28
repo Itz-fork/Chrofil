@@ -1,17 +1,17 @@
 /* Set pop-up window width */
-html, body {
+.chpopup_body {
     min-width: 300px;
 }
 
 /* Reduce pop-up window size in mobile devices */
 @media only screen and (max-device-width: 640px) {
-    html, body {
+    .chpopup_body {
         min-width: 25vw;
     }
 }
 
 
 /* Set form margins */
-form {
+.chform {
     margin: 2vw;
 }
