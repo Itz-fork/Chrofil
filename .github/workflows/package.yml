@@ -11,5 +11,5 @@ jobs:
       with:
         type: 'zip'
         filename: 'chrofil-latest.zip'
-        directory: './Chrofil_ext'
-        path: './release'
+        path: './Chrofil_ext'
+        directory: './release'
