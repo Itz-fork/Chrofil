@@ -9,7 +9,7 @@ const filter_types = {
 }
 
 // Inject css
-async function createCSS(ftype, fval) {
+async function createCSS(css_src) {
     let [tab] = await chrome.tabs.query({
         active: true,
         currentWindow: true
@@ -20,10 +20,10 @@ async function createCSS(ftype, fval) {
             target: {
                 tabId: tab.id
             },
-            css: `img { filter: ${filter_types[ftype]}(${fval}) !important; }`,
+            css: css_src,
         });
     } catch (error) {
-        alert(error)
+        console.log(error)
     }
     editButton.setAttribute("aria-busy", "false")
 }
@@ -31,11 +31,15 @@ async function createCSS(ftype, fval) {
 // Main function
 async function EditImg() {
     editButton.setAttribute("aria-busy", "true")
-    // Get selected filter
-    let ftype = document.getElementById("filter_type").selectedIndex
-    // Get selected filter value
-    let fval = document.getElementById("valrange").value
-    await createCSS(ftype, fval)
+    var css_src = `img { filter: `
+
+    // Get selected options and it's values
+    let chdata = [...document.querySelectorAll('input:checked')].map(e => [e.value, e.parentElement.children.item(2).value])
+    for (cdt of chdata) {
+        css_src += `${cdt[0]}(${cdt[1]}%) `
+    }
+    css_src += `!important; }`
+    await createCSS(css_src)
 }
 
 // Edit button listner

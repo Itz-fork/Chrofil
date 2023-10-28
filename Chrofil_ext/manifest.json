@@ -1,6 +1,6 @@
 {
     "name": "Chrofil",
-    "version": "0.1.1",
+    "version": "0.2",
     "description": "A simple image filter extension for chrome",
     "manifest_version": 3,
     "author": "git.itzfork@gmail.com",
@@ -11,7 +11,7 @@
         "128": "./icons/icon128.png"
     },
     "action": {
-        "default_popup": "chrofil_popup.html",
+        "default_popup": "popup/chrofil.html",
         "default_title": "Chrofil - filter adder for chrome"
     },
     "host_permissions": [
@@ -23,10 +23,10 @@
                 "<all_urls>"
             ],
             "css": [
-                "./chrofil_css.css"
+                "./popup/chrofil_styles.css"
             ],
             "js": [
-                "./chrofil_functions.js"
+                "./scripts/functions.js"
             ]
         }
     ],

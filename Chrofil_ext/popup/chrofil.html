@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="chrofil_styles.css">
+    <title>Chrofil</title>
+</head>
+
+<body class="chpopup_body">
+
+    <!-- filter select -->
+    <div class="filter_container">
+        <form class="chform">
+            <span class="chhead">Select filters <em data-tooltip="Click checkboxes to select filters"
+                    data-placement="bottom">(❓)</em></span>
+            <hr>
+            <!-- Filter type -->
+            <div>
+                <input type="checkbox" id="opt0" name="opt0" value="saturate" checked>
+                <label for="opt0">Saturation</label>
+                <input type="text" id="opt0Range" name="opt0Range" value="200" class="chmvals">
+            </div>
+            <details>
+                <summary>More options</summary>
+                <div>
+                    <input type="checkbox" id="opt1" name="opt1" value="grayscale">
+                    <label for="opt1">Grayscale</label>
+                    <input type="range" min="0" max="100" value="50" class="chmvals" id="opt1Range">
+                </div>
+                <div>
+                    <input type="checkbox" id="opt2" name="opt2" value="opacity">
+                    <label for="opt2">Opacity</label>
+                    <input type="range" min="0" max="100" value="25" class="chmvals" id="opt2Range">
+                </div>
+            </details>
+
+            <!-- Function button -->
+            <button id="edit_button" class="outline" aria-busy="false">Filter!</button>
+        </form>
+    </div>
+    <script src="../scripts/functions.js"></script>
+</body>
+
+</html>
