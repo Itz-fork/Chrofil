@@ -15,7 +15,7 @@ Chrofil currently supports,
 > Currently not available on chrome webstore
 
 2. Manual
-     - Click to download latest release - <kbd><a href="">chrofil_v0.2.zip</a></kbd>
+     - Click to download latest release - <kbd><a href="">chrofil-latest.zip</a></kbd>
      - Unzip it (unzipped folder name should be "Chrofil_ext")
      - Go to `chrome://extensions` on your browser
          - ![go to ext page](https://github.com/Itz-fork/Chrofil/assets/77770753/cf3411bb-4fd7-4b7e-95a6-1ef0f5dbff28)

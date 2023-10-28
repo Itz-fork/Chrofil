@@ -1,0 +1,15 @@
+name: Create Chrofil Release
+on:
+  push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: 'zip'
+        filename: 'chrofil-latest.zip'
+        directory: './Chrofil_ext'
+        path: './release'
