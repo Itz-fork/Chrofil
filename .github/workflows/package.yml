@@ -10,7 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - name: Checkout code
+      uses: actions/checkout@v4
     - name: Create zip
       uses: thedoctor0/zip-release@0.7.1
       with:
@@ -19,4 +20,5 @@ jobs:
         path: './Chrofil_ext'
     - name: Update or add zip file
       uses: EndBug/add-and-commit@v9
-      run: git add release/chrofil-latest.zip
+      with:
+        run: git add release/chrofil-latest.zip
