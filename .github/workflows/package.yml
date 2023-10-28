@@ -12,4 +12,4 @@ jobs:
         type: 'zip'
         filename: 'chrofil-latest.zip'
         directory: './Chrofil_ext'
-        path: './release'
+        path: 'release'
