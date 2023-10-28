@@ -38,7 +38,9 @@ Chrofil currently supports,
 - Click on extension tab and select "Chrofil"
     - ![extension tab](https://github.com/Itz-fork/Chrofil/assets/77770753/b67d5d57-aea4-4750-a9f0-bd09d6a8b2d6)
 - Select filters using checkboxes and to what percentage the filter should be applied (Eg: >100 on Saturation value would increase saturation while <100 decrease it)
-    - ![ui preview](https://github.com/Itz-fork/Chrofil/assets/77770753/837abd5a-8a25-4f0b-b999-c8d33196396f)
+    - ![ui preview](https://github.com/Itz-fork/Chrofil/assets/77770753/ffbf52c5-0245-48d5-a7d7-a552a3cd4a65)
+    - Clicking on "**More Options**" will reveal other filters
+
 
  
 > [!WARNING]
