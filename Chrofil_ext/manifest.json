@@ -1,6 +1,6 @@
 {
     "name": "Chrofil",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "A simple image filter extension for chrome",
     "manifest_version": 3,
     "author": "git.itzfork@gmail.com",
