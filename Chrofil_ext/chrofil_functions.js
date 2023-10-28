@@ -4,7 +4,8 @@ const editButton = document.getElementById("edit_button")
 // Current filter types
 const filter_types = {
     0: "saturate",
-    1: "grayscale"
+    1: "grayscale",
+    2: "opacity"
 }
 
 // Inject css
