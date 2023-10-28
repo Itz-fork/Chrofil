@@ -15,7 +15,7 @@ Chrofil currently supports,
 > Currently not available on chrome webstore
 
 2. Manual
-     - Click to download latest release - <kbd><a href="">chrofil-latest.zip</a></kbd>
+     - Click to download latest release - <kbd><a href="https://github.com/Itz-fork/Chrofil/raw/main/release/chrofil-latest.zip">chrofil-latest.zip</a></kbd>
      - Unzip it (unzipped folder name should be "Chrofil_ext")
      - Go to `chrome://extensions` on your browser
          - ![go to ext page](https://github.com/Itz-fork/Chrofil/assets/77770753/cf3411bb-4fd7-4b7e-95a6-1ef0f5dbff28)
@@ -37,12 +37,12 @@ Chrofil currently supports,
 ## Usage
 - Click on extension tab and select "Chrofil"
     - ![extension tab](https://github.com/Itz-fork/Chrofil/assets/77770753/b67d5d57-aea4-4750-a9f0-bd09d6a8b2d6)
-- Select filter type and to what percentage the filter should be applied (Eg: >100% on Saturation value would increase saturation while <100% decrease it)
-    - ![ui preview](https://github.com/Itz-fork/Chrofil/assets/77770753/fb75b936-c263-49e7-b820-27f5b2080dad)
+- Select filters using checkboxes and to what percentage the filter should be applied (Eg: >100 on Saturation value would increase saturation while <100 decrease it)
+    - ![ui preview](https://github.com/Itz-fork/Chrofil/assets/77770753/837abd5a-8a25-4f0b-b999-c8d33196396f)
 
  
 > [!WARNING]
-> The extension will target all the images on the webpage. To revert, simple choose the previous filter and set value to `100%`
+> The extension will target all the images on the webpage. To revert, simply choose the previous filter and set value to `100` for saturation and turn down sliders for others
 
 
 ## Example
