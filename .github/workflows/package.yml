@@ -19,11 +19,10 @@ jobs:
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: 'zip'
-        filename: '$RELEASE_NAME'
+        filename: '${{env.RELEASE_NAME}}'
         path: './Chrofil_ext'
     - name: Update or add zip file
       uses: EndBug/add-and-commit@v9
       with:
-        run: |
-          git add $RELEASE_NAME
-          git commit "Action: Update $RELEASE_NAME"
+        message: 'Action: Update ${{env.RELEASE_NAME}}'
+        run: git add ${{env.RELEASE_NAME}}
