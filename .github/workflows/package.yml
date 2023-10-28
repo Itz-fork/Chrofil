@@ -10,6 +10,5 @@ jobs:
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: 'zip'
-        filename: 'chrofil-latest.zip'
+        filename: './release/chrofil-latest.zip'
         path: './Chrofil_ext'
-        directory: './release'
